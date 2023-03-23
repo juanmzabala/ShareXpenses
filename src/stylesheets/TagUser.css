@@ -8,8 +8,6 @@
     border:solid 1px #000;
     border-radius: 15px;
     margin-bottom: 10px;
-    user-select: none;
-    text-overflow: ellipsis;
 }
 
 .text{

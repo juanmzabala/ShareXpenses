@@ -19,7 +19,7 @@ function TagUser(props){
         }
 
         if (nameUser || value ){
-            setClassInputText('inputText');
+            setClassInputText('editName');
         } 
     }
 
