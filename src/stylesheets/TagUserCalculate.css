@@ -1,0 +1,33 @@
+.containerTagCalculate{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    font-size: 20px;
+    min-height: 45px;
+    width: 330px;
+    border:solid 1px #000;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+
+
+.name{
+    margin-left: 10px;
+}
+
+.must{
+    background-color: #D43232;
+    color: #fff;
+}
+
+.receive{
+    background-color: #33C926;
+    color: #000;
+}
+
+.mustFree{
+    background-color: #F4C449;
+    color: #000;
+}

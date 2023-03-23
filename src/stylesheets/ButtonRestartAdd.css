@@ -1,0 +1,32 @@
+.containerButtons{
+    margin: 5px 0 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 330px;
+    height: 50px;
+}
+
+.restart{
+    width: 160px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #D43232;
+    border: solid 1px #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add{
+    width: 160px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #33C926;
+    border: solid 1px #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}

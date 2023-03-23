@@ -1,0 +1,72 @@
+.containerForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 160px;
+    position: relative;
+    margin: -10px 0 30px 0;
+}
+
+.blockGrey{
+    background-color: #979191;
+    width: 330px;
+    height: 120px;
+    border-radius: 15px;
+}
+
+.blockGrey form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputText,.inputNumber{
+    margin-top: 5px;
+    background-color: #C9C4C4;
+    border: solid 1px #000;
+    height: 40px;
+    width: 315px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+}
+.inputText{
+    position: absolute;
+    top: 20px;
+}
+
+.inputNumber{
+    position: absolute;
+    top: 70px;
+    color:#000;
+    border: solid 1px #000;
+}
+
+.error{
+    border: solid 1px #D43232;
+    color:#D43232 !important;
+}
+
+
+
+.submit{
+    position: absolute;
+    top: 120px;
+    background-color: #33C926;
+    height: 40px;
+    width: 315px;
+    border: solid 1px #000;
+    border-radius: 15px;
+    margin-top: 5px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.edit{
+    opacity: 60%;
+    cursor:no-drop;
+}

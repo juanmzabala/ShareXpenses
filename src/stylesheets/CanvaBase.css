@@ -1,0 +1,16 @@
+html,body{
+    background-color: #D9D9D9;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
