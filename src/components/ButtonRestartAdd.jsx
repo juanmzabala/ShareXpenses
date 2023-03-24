@@ -4,8 +4,8 @@ import { UsersContext, DisplayContext } from '../context/ContextProvider';
 
 function ButtonRestartAdd(){
 
-    const {users,setUsers} = useContext(UsersContext);
-    const {screenView,setScreenView} = useContext(DisplayContext);
+    const {setUsers} = useContext(UsersContext);
+    const {setScreenView} = useContext(DisplayContext);
 
     const add = ()=>{
         setScreenView('add');
@@ -17,8 +17,16 @@ function ButtonRestartAdd(){
     }
     return(
         <div className="containerButtons">
-            <button onClick = {restart}className='restart'>REINICIAR</button>
-            <button onClick= {add}className='add'>AGREGAR</button>
+            <button 
+                onClick = {restart}
+                className='restart'>
+                    REINICIAR
+            </button>
+            <button 
+                onClick= {add}
+                className='add'>
+                    AGREGAR
+            </button>
         </div>
     )
 };

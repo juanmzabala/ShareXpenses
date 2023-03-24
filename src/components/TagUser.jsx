@@ -5,7 +5,7 @@ import { UsersContext,DisplayContext } from "../context/ContextProvider";
 
 function TagUser(props){
     const {users,setUsers} = useContext(UsersContext);
-    const {screenView,setScreenView} = useContext(DisplayContext);
+    const {setScreenView} = useContext(DisplayContext);
 
     const [nameUser,setNameUser] = useState(props.name);
     const [expenses,setExpenses] = useState(props.expenses);
@@ -37,6 +37,7 @@ function TagUser(props){
             
         }
     }
+
     const sendEdit = (id)=>{
         if (nameUser && expenses){
             if (Number(/^[0-9.]+$/.test(expenses))){
@@ -61,13 +62,19 @@ function TagUser(props){
         return(
             <div className="containerTag editTag" id={props.id}>
                 <div className="text">
-                    <input onChange = {changeName}type='text' className={classInputText} value={nameUser}/>
+                    <input onChange = {changeName}
+                            type='text' 
+                            className={classInputText} 
+                            value={nameUser}/>
                     <div className="splitter"> | </div>
                     <div className="number">Gastó $
-                    <input onChange={changeExpenses} type='text' className={classInputNumber} value={expenses}/></div>
+                    <input onChange={changeExpenses} 
+                            type='text' 
+                            className={classInputNumber} 
+                            value={expenses}/></div>
                 </div>
                 <div onClick={()=>sendEdit(props.id)} className="closeContainer">
-                    <BiCheckCircle color='#FFF'size={'1em'}/> </div>
+                    <BiCheckCircle color='#fff'size={'1em'}/> </div>
             </div>
         )
     }else{
@@ -78,7 +85,8 @@ function TagUser(props){
                     <div className="splitter"> | </div>
                     <div className="number">Gastó ${props.expenses}</div>
                 </div>
-                <div onClick={()=>props.erase(props.id)} className="closeContainer">
+                <div onClick={()=>props.erase(props.id)}
+                    className="closeContainer">
                     <BiXCircle color='#D43232'  size={'1em'}/> </div>
             </div>
         )

@@ -1,6 +1,7 @@
 import '../stylesheets/FormAdd.css';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
+
 function FormAdd(props){
     const [nameUser,setNameUser] = useState('');
     const [expenses,setExpenses] = useState('');
@@ -16,9 +17,7 @@ function FormAdd(props){
         if (nameUser || value ){
             setClassInputText('inputText');
         }
-        value.length
-
-        
+        value.length  
     }
 
     const changeExpenses = (e)=>{
@@ -32,15 +31,13 @@ function FormAdd(props){
             }else{
                 setClassInputNumber('inputNumber error');
             }
-            
         }
     }
 
     const submitForm = (e)=>{
         e.preventDefault();
         if (nameUser && expenses){
-            let expensesAdd = evaluate(expenses)
-            if (!isNaN(evaluate(expenses))){
+            if (/^[0-9+*.]+$/.test(expenses)){
                 let expensesAdd = evaluate(expenses)
                 props.function(nameUser,expensesAdd);
                 setExpenses('');

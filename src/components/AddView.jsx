@@ -11,7 +11,7 @@ import uniqid from 'uniqid';
 function AddView(){
 
     const {users,setUsers} = useContext(UsersContext);
-    const {screenView,setScreenView} = useContext(DisplayContext);
+    const {setScreenView} = useContext(DisplayContext);
 
     const addUser = (user,expenses)=>{
         const refreshUsers = [{name:user,
@@ -28,8 +28,8 @@ function AddView(){
 
     const swichToDisplayShow = ()=>{
         setScreenView('show');
-
     }
+
     const editTag = (id)=>{
         setScreenView('edit');
         users.forEach((user)=>{

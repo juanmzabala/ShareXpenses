@@ -1,13 +1,11 @@
 import '../stylesheets/CanvaBase.css';
 import FormAdd from './FormAdd';
 import TagUser from './TagUser';
-import ButtonCalculate from './ButtonCalculate';
 import { useContext } from 'react';
-import { UsersContext,DisplayContext } from '../context/ContextProvider';
+import { UsersContext } from '../context/ContextProvider';
 
 function EditView(){
     const {users,setUsers} = useContext(UsersContext);
-    const {screenView,setScreenView} = useContext(DisplayContext);
 
     const eraseUser = (id)=>{
         const newUsers = users.filter(user=>(user.id !=id))
