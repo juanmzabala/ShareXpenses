@@ -79,7 +79,9 @@ function TagUser(props){
         )
     }else{
         return(
-            <div onDoubleClick={()=>props.edit(props.id)} className="containerTag" id={props.id}>
+            <div onDoubleClick={()=>props.edit(props.id)} 
+                    className="containerTag"
+                    id={props.id}>
                 <div className="text">
                     <div className="name">{props.name}</div>
                     <div className="splitter"> | </div>

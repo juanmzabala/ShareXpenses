@@ -17,7 +17,6 @@ function FormAdd(props){
         if (nameUser || value ){
             setClassInputText('inputText');
         }
-        value.length  
     }
 
     const changeExpenses = (e)=>{
@@ -38,7 +37,7 @@ function FormAdd(props){
         e.preventDefault();
         if (nameUser && expenses){
             if (/^[0-9+*.]+$/.test(expenses)){
-                let expensesAdd = evaluate(expenses)
+                const expensesAdd = evaluate(expenses)
                 props.function(nameUser,expensesAdd);
                 setExpenses('');
                 setNameUser('');
@@ -54,14 +53,28 @@ function FormAdd(props){
                 setClassInputNumber('inputNumber')
         }
     }
+
     if(props.edit==true){
         return(
             <div className='containerForm'>
             <div className="blockGrey edit">
                 <form onSubmit={submitForm} >
-                    <input disabled onChange={changeName} className='inputText edit' placeholder='Agrega el nombre' type='text' value={nameUser}/>
-                    <input disabled onChange={changeExpenses} className='inputNumber edit' placeholder='¿Cuánto gastaste?' type='text' value={expenses}/>
-                    <button disabled className='submit edit'>AGREGAR</button>
+                    <input disabled 
+                            onChange={changeName}
+                            className='inputText edit'
+                            placeholder='Agrega el nombre'
+                            type='text'
+                            value={nameUser}/>
+                    <input disabled
+                            onChange={changeExpenses}
+                            className='inputNumber edit'
+                            placeholder='¿Cuánto gastaste?'
+                            type='text'
+                            value={expenses}/>
+                    <button disabled
+                            className='submit edit'>
+                                AGREGAR
+                    </button>
                 </form>
             </div>
         </div>
@@ -71,8 +84,18 @@ function FormAdd(props){
         <div className='containerForm'>
             <div className="blockGrey">
                 <form onSubmit={submitForm}>
-                    <input onChange={changeName} className={classInputText} placeholder='Agrega el nombre' type='text' value={nameUser}/>
-                    <input onChange={changeExpenses} className={classInputNumber} placeholder='¿Cuánto gastaste?' type='text' value={expenses}/>
+                    <input 
+                        onChange={changeName}
+                        className={classInputText}
+                        placeholder='Agrega el nombre'
+                        type='text'
+                        value={nameUser}/>
+                    <input 
+                        onChange={changeExpenses}
+                        className={classInputNumber}
+                        placeholder='¿Cuánto gastaste?'
+                        type='text'
+                        value={expenses}/>
                     <button className='submit'>AGREGAR</button>
                 </form>
             </div>
