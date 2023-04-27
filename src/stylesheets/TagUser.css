@@ -1,56 +1,55 @@
-.containerTag{
+.containerTag {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     font-size: 20px;
     min-height: 45px;
     width: 330px;
-    border:solid 1px #000;
+    border: solid 1px #000;
     border-radius: 15px;
     margin-bottom: 10px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.text{
+.text {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     gap: 5px;
 }
 
-.name{
+.name {
     margin-left: 10px;
 }
-.editName{
-    border:none;
+.editName {
+    border: none;
     font-size: 20px;
-    margin:10px;
-    width:90px;
+    margin: 10px;
+    width: 90px;
     background-color: #c5bebe;
     border-radius: 5px;
     outline: none;
 }
-.editExpenses{
-    border:none;
+.editExpenses {
+    border: none;
     font-size: 20px;
-    width:80px;
+    width: 80px;
     background-color: #c5bebe;
     border-radius: 5px;
     outline: none;
 }
 
-.editTag{
+.editTag {
     background-color: #979191;
-    color:#fff;
+    color: #fff;
 }
 
-.error{
-    border: solid 1px #D43232;
-    color:#D43232 !important;
+.error {
+    border: solid 1px #d43232;
+    color: #d43232 !important;
 }
 
-
-.closeContainer{
+.closeContainer {
     display: flex;
     justify-content: center;
     align-items: center;
